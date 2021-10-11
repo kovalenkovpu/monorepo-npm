@@ -7,3 +7,5 @@
 - `npm run <command_name> -ws` to run the command for all workspaces. E.g. `npm run test -ws`
 
 ### More details on the usage is [here](https://docs.npmjs.com/cli/v7/using-npm/workspaces).
+
+## Important! `npm` v.7.x is required
