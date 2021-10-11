@@ -1,0 +1,64 @@
+.button {
+  cursor: pointer;
+  margin: 0.5rem;
+  border-width: 1px;
+  border-color: #044186;
+  border-radius: 0.2rem;
+  border-style: solid;
+
+  &.primary {
+    color: white;
+    background-color: #044186;
+
+    &:hover:not(:disabled) {
+      background-color: #0252ad;
+    }
+
+    &:focus:not(:disabled) {
+      background-color: #022b5a;
+    }
+
+    &:active:not(:disabled) {
+      background-color: #02346d;
+    }
+  }
+  
+  &.default {
+    background-color: white;
+
+    &:hover:not(:disabled) {
+      background-color: #e0e0e0;
+    }
+
+    &:focus:not(:disabled) {
+      background-color: #d8d8d8;
+    }
+
+    &:active:not(:disabled) {
+      background-color: #cfcfcf;
+    }
+  }
+
+  &.large {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  &.medium {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  &.small {
+    padding: 0.25rem 0.5rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    // background-color: lightgray;
+    // border-width: 0;
+    border-color: #cfcfcf;
+    margin: calc(0.5rem + 1px);
+    opacity: 0.4;
+  }
+}
