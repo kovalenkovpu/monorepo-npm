@@ -6,6 +6,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start:app": "npm start -w @monorepo-npm/react-app",
+    "start:components": "npm run storybook -w @monorepo-npm/react-components",
+    "build:app": "npm run build -w @monorepo-npm/react-app",
+    "build:components": "npm run build -w @monorepo-npm/react-components",
+    "build": "npm run build -ws"
   },
   "repository": {
     "type": "git",
